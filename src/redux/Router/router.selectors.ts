@@ -1,4 +1,4 @@
-import { State } from '../state';
+import { State } from "../state";
 
 export const getPathName = (state: State): string | undefined => {
   if (state.router && state.router.location) {

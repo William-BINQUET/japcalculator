@@ -4,7 +4,7 @@ import Maki from "../assets/images/food/Maki.svg";
 import Sushi from "../assets/images/food/Sushi.svg";
 import California from "../assets/images/food/California.svg";
 import BeefCheese from "../assets/images/food/Brochette boeuf fro.svg";
-import Gyoza from "../assets/images/food/Gyoza.svg"
+import Gyoza from "../assets/images/food/Gyoza.svg";
 
 export interface FoodItem {
   name: string;

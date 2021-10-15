@@ -1,6 +1,6 @@
 import { createMuiTheme, Theme } from "@material-ui/core";
 
-export interface CustomTheme extends Theme {}
+export type CustomTheme = Theme
 
 export const theme: CustomTheme = createMuiTheme({
   palette: {
