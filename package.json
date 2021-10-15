@@ -54,6 +54,8 @@
     ]
   },
   "devDependencies": {
+    "@sentry/react": "^6.13.3",
+    "@sentry/tracing": "^6.13.3",
     "@types/history": "^4.7.5",
     "@types/react-redux": "^7.1.7",
     "@typescript-eslint/eslint-plugin": "^4.0.0",

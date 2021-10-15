@@ -9,6 +9,17 @@ import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import { store } from "./redux/config";
 import { history } from "./redux/Router/router";
 import { theme } from "./style/theme";
+import * as Sentry from "@sentry/react";
+import { Integrations } from "@sentry/tracing";
+
+Sentry.init({
+  dsn: "https://a3d38ecd090042b6a9b810d8ad53ad0d@o1040079.ingest.sentry.io/6008956",
+  integrations: [new Integrations.BrowserTracing()],
+
+  // We recommend adjusting this value in production, or using tracesSampler
+  // for finer control
+  tracesSampleRate: 1.0,
+});
 
 ReactDOM.render(
   <Provider store={store}>
