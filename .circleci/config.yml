@@ -25,6 +25,7 @@ jobs:
 
       # run tests!
       - run: yarn test
+      - run: yarn audit
       - run: yarn build
 
 workflows:
