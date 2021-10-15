@@ -51,7 +51,7 @@ export const CalculatorPage: React.FC<Props> = (props: Props) => {
     });
   };
 
-  const throwError = () => () => {
+  const throwError = () => {
     throw new Error("Error Button Clicked");
   };
 
