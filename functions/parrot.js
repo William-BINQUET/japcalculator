@@ -3,7 +3,7 @@ exports.handler = async function(event, context) {
   console.log(event);
 
   try {
-    const requestBody = JSON.parse(event.body);
+    JSON.parse(event.body);
   } catch {
     return {
       statusCode: 400,
@@ -11,6 +11,7 @@ exports.handler = async function(event, context) {
     };
   }
 
+  const requestBody = JSON.parse(event.body);
   const message = requestBody.message;
 
   if (event.httpMethod === "OPTIONS") {
